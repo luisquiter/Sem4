@@ -1,0 +1,56 @@
+.btn-whatsapp {
+        position: relative;
+        margin-top: 5cm;
+        margin-left: 5cm;
+        z-index: 2;
+    }
+
+.btn-whatsapp:before {
+    content: "";
+    position: absolute;
+    margin-top: cm;
+    margin-left: cm;
+    width: 45px;
+    height: 45px;
+    background-color: #00e675;
+    opacity: 0;
+    border-radius: 50%;
+    animation: onda 1.7s infinite;
+    padding-block: 0%;
+}
+
+
+.btn-whatsapp:before {
+    animation-delay: 1s;
+}
+
+@keyframes onda {
+    0% {
+        transform: scale(1);
+    }
+
+    15% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        transform: scale(3);
+    }
+}
+
+.form {
+    width: 480px;
+    height: 700px;
+    background: #e6e6e6;
+    border-radius: 8px;
+    box-shadow: 0 0 40px -10px #000;
+    margin: calc(50vh - 220px) auto;
+    padding: 20px 30px;
+    max-width: calc(100vw - 40px);
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    color: black;
+
+}
